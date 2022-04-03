@@ -4,10 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <title>Header Case 1</title>
     <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="/" class="logo">
+                    <img src="img/logotype.svg" width="60" height="62" alt="Логотип">
+                    <span class="visually-hidden">Логотип</span>
+                </a>
+                <ul class="site-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Курсы</a>
+                    </li>
+                    <li class="nav-item menu-item-active">
+                        <a class="nav-link" href="#">Учебники</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Для начинающих</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Для детей</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Блог</a>
+                    </li>
+                </ul>
+                <ul class="user-nav">
+                    <li class="user-nav-item cart">
+                        <a href="#" class="button button-outline user-nav-link">
+                            <img src="img/cart-icon.svg" width="22" height="20" alt="Иконка корзины">
+                            Корзина
+                        </a>
+                    </li>
+                    <li class="user-nav-item sign-in">
+                        <a href="#" class="button button-filled user-nav-link">
+                            <img src="img/user-icon.svg" width="19" height="20" alt="Иконка пользователя">
+                            Войти
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 </body>
 </html>
