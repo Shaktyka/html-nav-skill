@@ -14,8 +14,9 @@
 }
 
 body {
+    width: var(--max-width);
     min-width: var(--max-width);
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     min-height: 100vh;
 
@@ -78,6 +79,10 @@ img {
     background-color: var(--brown-bg-color);
 }
 
+.header__wrap {
+    padding: 30px 40px 30px 102px;
+}
+
 /* Логотип */
 
 .logo {
@@ -104,6 +109,8 @@ img {
 
 .site-nav {
     margin: 0;
+    padding: 0;
+    padding-right: 13px;
     list-style: none;
 }
 
@@ -145,6 +152,7 @@ img {
     margin-bottom: 18px;
 
     font-family: 'Forum', cursive;
+    font-weight: 400;
     font-size: 44px;
     line-height: 49px;
 }
