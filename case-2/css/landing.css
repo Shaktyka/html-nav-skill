@@ -1,0 +1,163 @@
+/* Общие стили */
+
+:root {
+    --text-color: #222020;
+    --content-bg-color: #FFFFFF;
+    --brown-bg-color: #CEC1BB;
+    --max-width: 1366px;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: var(--max-width);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color);
+    background-color: var(--content-bg-color);
+}
+
+.container {
+    /* width: calc(var(--max-width) - 103px * 2); */
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+/* Страница */
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+
+.main {
+    /* прописать потом правильную сетку */
+    /* min-height: 294px;  */
+    grid-area: content;
+}
+
+/* Хедер */
+
+.header {
+    grid-area: header;
+}
+
+.header .container {
+    display: grid;
+    grid-template-columns: auto 663px;
+    background-color: var(--brown-bg-color);
+}
+
+/* Логотип */
+
+.logo {
+    display: flex;
+    flex-shrink: 0;
+    width: 46px;
+    height: 46px;
+
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.logo:hover,
+.logo:focus {
+    opacity: 0.6;
+}
+
+/* Навигация */
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-nav {
+    margin: 0;
+    list-style: none;
+}
+
+.nav-item {
+    margin-bottom: 15px;
+}
+
+.nav-link {
+    display: inline-block;
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Иллюстрация справа */
+
+.header__img {
+    display: flex;
+    width: 663px;
+    max-width: 663px;
+    height: 600px;
+    max-height: 600px;
+}
+
+.header__img img {
+    width: 663px;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Промо-блок */
+
+.promo {
+    padding-top: 119px;
+}
+
+.promo__title {
+    margin: 0;
+    margin-bottom: 18px;
+
+    font-family: 'Forum', cursive;
+    font-size: 44px;
+    line-height: 49px;
+}
+
+.promo__slogan {
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* Футер */
+
+.footer {
+    grid-area: footer;
+    background-color: var(--brown-bg-color);
+}
