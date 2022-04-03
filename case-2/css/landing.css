@@ -163,9 +163,48 @@ img {
     line-height: 24px;
 }
 
+/* Main */
+
+.main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 /* Футер */
 
 .footer {
     grid-area: footer;
     background-color: var(--brown-bg-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer .container {
+    width: calc(var(--max-width) - 103px * 2);
+}
+
+.footer__nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .logo {
+    margin-right: 54px;
+}
+
+.footer .site-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer .nav-item {
+    display: flex;
+    margin-bottom: 0;
+    margin-right: 25px;
+}
+
+.footer .nav-item:last-child {
+    margin-right: 0;
 }
