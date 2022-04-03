@@ -1,0 +1,170 @@
+/* Общие стили */
+
+:root {
+    --text-color: #242424;
+    --bg-color: #FFFFFF;
+    --max-width: 1366px;
+    --side-padding: 303px;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    width: var(--max-width);
+    min-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0;
+    min-height: 100vh;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: var(--text-color);
+
+    background-color: var(--bg-color);
+}
+
+.container {
+    width: calc(var(--max-width) - var(--side-padding) * 2);
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+/* Хлебные крошки */
+
+.bredcrumbs__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+}
+
+.bredcrumbs__item {
+    position: relative;
+    display: flex;
+    margin-right: 20px;
+}
+
+.bredcrumbs__item + .bredcrumbs__item::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: -14px;
+    width: 9px;
+    height: 9px;
+    background-color: #006528;
+    transform: rotate(45deg);
+  }
+
+.breadcrumbs__link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 1;
+}
+
+.breadcrumbs-link:hover,
+.breadcrumbs-link:focus {
+  opacity: 0.6;
+}
+
+.bredcrumbs__item:last-child .breadcrumbs__link {
+    color: rgba(36, 36, 36, 0.6);
+}
+
+/* Стили статьи */
+
+.article {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.article__content h1 {
+    margin: 0;
+    margin-bottom: 25px;
+    margin-top: 40px;
+
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+}
+
+.article__content h2 {
+    margin: 0;
+    margin-bottom: 25px;
+    margin-top: 25px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+}
+
+.article__content ul,
+.article__content ol {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+
+    counter-reset: num;
+}
+
+.article__content li {
+    position: relative;
+    counter-increment: num;
+    padding-left: 27px;
+    padding-bottom: 15px;
+}
+
+.article__content a {
+    color: inherit;
+    border-bottom: 1px solid var(--text-color);
+    text-decoration: none;
+}
+
+.article__content li::before {
+    content: counter(num) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.article__content p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.article__content .intro {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+}
