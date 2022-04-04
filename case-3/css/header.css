@@ -1,0 +1,165 @@
+/* Общие стили */
+
+:root {
+    --text-color: #0E091B;
+    --bg-color: #eeeeee;
+    --max-width: 1366px;
+    --header-bg-color: #FFFFFF;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: var(--max-width);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color);
+    background-color: var(--header-bg-color);
+}
+
+.header {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: var(--bg-color);
+}
+
+.container {
+    width: calc(var(--max-width) - 103px * 2);
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+/* Хедер */
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Логотип */
+
+.logo {
+    display: flex;
+    flex-shrink: 0;
+    width: 98px;
+    height: 31px;
+
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.logo:hover,
+.logo:focus {
+    opacity: 0.6;
+}
+
+/* Навигация по сайту */
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.nav-item {
+    position: relative;
+    margin-right: 25px;
+}
+
+.nav-link {
+    text-decoration: none;
+    transition: opacity 0.3s;
+    opacity: 1;
+    color: inherit;
+    font: inherit;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    opacity: 0.6;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.menu-item-active::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/underline.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Пользовательская навигация */
+
+.user-nav {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.user-nav-item:not(:first-child) {
+    margin-left: 20px;
+}
+
+/* User menu */
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    text-decoration: none;
+
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: opacity 0.3s;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.5;
+}
