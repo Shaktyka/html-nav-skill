@@ -127,7 +127,7 @@ img {
     background-position: center center;
 }
 
-/* Пользовательская навигация */
+/* User menu */
 
 .user-nav {
     display: flex;
@@ -143,8 +143,6 @@ img {
 .user-nav-item:not(:first-child) {
     margin-left: 20px;
 }
-
-/* User menu */
 
 .button {
     display: flex;

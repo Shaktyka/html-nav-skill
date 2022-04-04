@@ -15,11 +15,14 @@
         <!-- Меню -->
         <aside class="aside">
             <nav class="main-nav">
-                <a href="/" class="logo">
-                    <img src="img/logo.svg" width="133" height="42" alt="Логотип">
-                    <span class="visually-hidden">Логотип</span>
-                </a>
-                <ul class="list site-nav">
+                <div class="logo__wrap">
+                    <a href="/" class="logo">
+                        <img src="img/logotype.svg" width="133" height="42" alt="Логотип">
+                        <span class="visually-hidden">Логотип</span>
+                    </a>
+                </div>
+                <!-- Меню сайта -->
+                <ul class="list site-nav list-box">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Одежда</a>
                     </li>
@@ -42,7 +45,8 @@
                         <a class="nav-link" href="#">Распродажа</a>
                     </li>
                 </ul>
-                <ul class="list user-nav">
+                <!-- User-меню -->
+                <ul class="list user-nav list-box">
                     <li class="user-nav-item">
                         <a href="#" class="user-nav-link">
                             Доставка и оплата
@@ -59,22 +63,29 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="list social">
+                <!-- Social -->
+                <ul class="list social list-box">
                     <li class="social-item">
                         <a href="#" class="button social-item-link">
-                            <img src="img/instagram.svg" width="18" height="18" alt="Иконка Instagram">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.175 4.825H14.1835M5.25 1H13.75C16.0972 1 18 2.90279 18 5.25V13.75C18 16.0972 16.0972 18 13.75 18H5.25C2.90279 18 1 16.0972 1 13.75V5.25C1 2.90279 2.90279 1 5.25 1ZM12.9 8.9645C13.0049 9.67191 12.8841 10.3944 12.5547 11.0292C12.2253 11.6639 11.7042 12.1787 11.0654 12.5002C10.4266 12.8217 9.70268 12.9337 8.99662 12.82C8.29056 12.7064 7.6383 12.3731 7.13261 11.8674C6.62693 11.3617 6.29357 10.7094 6.17996 10.0034C6.06634 9.29732 6.17826 8.57341 6.49978 7.93462C6.8213 7.29583 7.33606 6.77468 7.97084 6.44531C8.60562 6.11593 9.32809 5.9951 10.0355 6.1C10.7571 6.207 11.4251 6.54324 11.9409 7.05906C12.4568 7.57488 12.793 8.24292 12.9 8.9645Z" stroke="#FFFDFC" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                             <span class="visually-hidden">Instagram</span>
                         </a>
                     </li>
                     <li class="social-item">
                         <a href="#" class="button social-item-link">
-                            <img src="img/facebook.svg" width="18" height="18" alt="Иконка Facebook">
+                            <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 1H7.54545C6.46048 1 5.41994 1.44777 4.65274 2.2448C3.88555 3.04183 3.45455 4.12283 3.45455 5.25V7.8H1V11.2H3.45455V18H6.72727V11.2H9.18182L10 7.8H6.72727V5.25C6.72727 5.02457 6.81347 4.80837 6.96691 4.64896C7.12035 4.48955 7.32846 4.4 7.54545 4.4H10V1Z" stroke="#FFFDFC" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                             <span class="visually-hidden">Facebook</span>
                         </a>
                     </li>
                     <li class="social-item">
                         <a href="#" class="button social-item-link">
-                            <img src="img/twitter.svg" width="18" height="18" alt="Иконка Twitter">
+                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 1.00841C18.2165 1.57307 17.349 2.00495 16.4309 2.28741C15.9382 1.70852 15.2833 1.29822 14.5548 1.112C13.8264 0.925781 13.0596 0.972624 12.3581 1.24619C11.6565 1.51977 11.0542 2.00686 10.6324 2.64161C10.2107 3.27636 9.98993 4.02813 10 4.79525V5.6312C8.56215 5.6693 7.13741 5.34348 5.85264 4.68277C4.56788 4.02207 3.46299 3.04698 2.63636 1.84435C2.63636 1.84435 -0.636364 9.36789 6.72727 12.7117C5.04225 13.8803 3.03495 14.4663 1 14.3836C8.36364 18.5633 17.3636 14.3836 17.3636 4.77018C17.3629 4.53733 17.341 4.30505 17.2982 4.07634C18.1332 3.23495 18.7225 2.17264 19 1.00841V1.00841Z" stroke="#FFFDFC" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                             <span class="visually-hidden">Twitter</span>
                         </a>
                     </li>
