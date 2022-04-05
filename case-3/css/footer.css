@@ -54,4 +54,218 @@ img {
     overflow: hidden;
 }
 
-/* Основной контейнер */
+.container {
+    width: calc(var(--max-width) - 103px * 2);
+    margin: 0 auto;
+}
+
+/* Футер */
+
+/* Верхняя часть */
+
+.footer__content-top {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-column-gap: 70px;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Первый список */
+
+.logo {
+    display: block;
+    max-width: 82px;
+    max-height: 48px;
+    margin-bottom: 15px;
+}
+
+.logo img {
+    flex-shrink: 0;
+}
+
+.copyright {
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: 160px;
+
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* Социалки */
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social__item {
+    max-width: 26px;
+    max-height: 26px;
+}
+
+.social__item:not(:last-child) {
+    display: flex;
+    margin-right: 20px;
+}
+
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Остальные списки */
+
+.footer dt {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer dd {
+    padding: 0;
+    margin: 0;
+}
+
+.footer__nav-list li {
+    display: flex;
+    margin-bottom: 11px;
+}
+
+.footer__nav-list li:last-child {
+    margin-bottom: 0;
+}
+
+.footer__nav-list a {
+    display: flex;
+    color: inherit;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.footer__nav-list a:hover,
+.footer__nav-list a:focus {
+    opacity: 0.6;
+}
+
+/* Способы оплаты */
+
+.pay-methods {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.pay-methods__item {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.pay-methods__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.pay-methods__link {
+    display: flex;
+}
+
+.payments__text {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.payments__text a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+/* Список иконок сторов */
+
+.stores .footer__nav-list {
+    margin-bottom: 15px;
+    max-width: 100px;
+    min-height: 34px;
+}
+
+/* Нижняя часть */
+
+.footer__bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.footer__content-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Смена страны */
+
+.country {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.country__pic {
+    margin-right: 5px;
+}
+
+.country__name {
+    margin-right: 5px;
+
+    font-size: 12px;
+    line-height: 16px;
+    opacity: 0.8;
+}
+
+.country__change-btn {
+    display: flex;
+    padding: 0;
+
+    background-color: transparent;
+    
+    text-decoration: underline;
+    color: inherit;
+    font-size: 12px;
+    line-height: 16px;
+
+    opacity: 0.8;
+    border: none;
+}
+
+/* Ссылки внизу справа */
+
+.footer__links {
+    display: flex;
+    align-items: center;
+}
+
+.footer__item {
+    position: relative;
+    padding-left: 14px;
+}
+
+.footer__item:first-child {
+    padding-left: 0;
+}
+
+.footer__item:not(:first-child)::before {
+    position: absolute;
+    content: "|";
+    top: 0;
+    left: 3px;
+    color:rgba(0, 0, 0, 0.2);
+}
+
+.footer__link {
+    color: inherit;
+    font: inherit;
+    font-size: 12px;
+    line-height: 16px;
+    opacity: 0.8;
+}
