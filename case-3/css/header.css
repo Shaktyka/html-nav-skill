@@ -38,7 +38,6 @@ body {
 .container {
     width: calc(var(--max-width) - 103px * 2);
     margin: 0 auto;
-    outline: 1px solid gray;
 }
 
 img {
