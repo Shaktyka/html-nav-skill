@@ -193,7 +193,10 @@ a {
     content: counter(num) ".";
     position: absolute;
     left: 0;
-    top: 0;
+    top: 4px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 130%;
 }
 
 .article__content a {
