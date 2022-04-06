@@ -1,0 +1,145 @@
+/* Общие стили */
+
+:root {
+    --text-color: #231F20;
+    --bg-color: #231F20;
+    --max-width: 1366px;
+    --dark-bg-color: #FDFDFE;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: var(--max-width);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 98px;
+    padding-right: 98px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+/* Страница */
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    background-color: var(--dark-bg-color);
+}
+
+.main-nav,
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.site-nav__item {
+    display: flex;
+    margin-left: 30px;
+    opacity: 1;
+    transform: opacity 0.3;
+}
+
+.site-nav__item:hover,
+.site-nav__item:focus {
+    opacity: 0.6;
+}
+
+.site-nav__item:first-child {
+    margin-left: 0;
+}
+
+.site-nav__link {
+    display: flex;
+    color: inherit;
+}
+
+/* Логотип */
+
+.logo {
+    display: flex;
+    flex-shrink: 0;
+    max-width: 66px;
+    max-height: 64px;
+
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.logo:hover,
+.logo:focus {
+    opacity: 0.6;
+}
+
+/* Main */
+
+.main {
+    background-color: var(--bg-color);
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    background-color: var(--dark-bg-color);
+}
